@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "LaptevBrush";
-  src: local("LaptevBrush"),
-   url("./fonts/laptevBrush.otf") format("opentype");
-}
-
 * {
   margin: 0;
   padding: 0;
