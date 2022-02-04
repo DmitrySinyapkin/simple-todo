@@ -1,0 +1,53 @@
+.input {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.input__wrapper {
+  width: 500px;
+  height: 25vh;
+  margin: 210px auto;
+  padding: 10px;
+  background: darkgray;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+}
+.input__wrapper textarea {
+  width: 100%;
+  height: 20vh;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.input__wrapper .input__buttons ul {
+  padding: 0 10px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.input__wrapper .input__buttons ul li {
+  color: black;
+  cursor: pointer;
+}
+.input__wrapper .input__buttons ul li:hover {
+  color: #f9a82f;
+}
+@media (max-width: 500px) {
+  .input__wrapper {
+    width: 100%;
+  }
+}
+.input_open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}

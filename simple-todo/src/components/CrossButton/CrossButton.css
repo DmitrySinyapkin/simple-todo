@@ -1,0 +1,23 @@
+.cross {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cross:hover {
+  background: orangered;
+}
+.cross__btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding-top: 3px;
+  font-family: Arial;
+  background: #f9a82f;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.cross__btn:hover {
+  color: orangered;
+}

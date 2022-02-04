@@ -1,0 +1,28 @@
+.task {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: darkgray;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__text {
+        width: 60%;
+        color: black;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 5px;
+    }
+
+    .hidden {
+        visibility: hidden;
+    }
+    
+    .done {
+        text-decoration: line-through;
+    }
+}
