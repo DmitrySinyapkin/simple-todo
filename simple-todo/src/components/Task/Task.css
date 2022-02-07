@@ -25,3 +25,6 @@
 .task .done {
   text-decoration: line-through;
 }
+.task_hidden {
+  display: none;
+}

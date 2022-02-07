@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [tasks, setTasks] = useState([]);
+  const [filter, setFilter] = useState('all');
   const [newTask, setNewTask] = useState(false);
   const [editTask, setEditTask] = useState(false);
   const [editedText, setEditedText] = useState({text: '', index: 0});
@@ -64,11 +65,16 @@ function App() {
         <Header />
         <Menu
           newHandler={handleNewClick}
+          active={filter}
+          allHandler={() => setFilter('all')}
+          activeHandler={() => setFilter('active')}
+          doneHandler={() => setFilter('done')}
         />
       </header>
       <main>
         <TaskList
           tasks={tasks}
+          filter={filter}
           markDone={markDone}
           handleEditClick={handleEditClick}
           deleteTask={deleteTask}

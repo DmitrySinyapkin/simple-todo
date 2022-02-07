@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import './Menu.css';
 
-const Menu = ({newHandler, allHandler, activeHandler, doneHandler}) => {
-    const [active, setActive] = useState('all');
+const Menu = ({newHandler, active, allHandler, activeHandler, doneHandler}) => {
 
     const handleAllClick = () => {
-        setActive('all');
         allHandler();
     }
 
     const handleActiveClick = () => {
-        setActive('active');
         activeHandler();
     }
 
     const handleDoneClick = () => {
-        setActive('done');
         doneHandler();
     }
 

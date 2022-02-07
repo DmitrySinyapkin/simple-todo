@@ -2,9 +2,9 @@ import React from "react";
 import './Task.css';
 import CrossButton from "../CrossButton/CrossButton";
 
-const Task = ({text, done, checkHandler, changeHandler, deleteHandler}) => {
+const Task = ({text, filter, done, checkHandler, changeHandler, deleteHandler}) => {
     return (
-        <div className="task">
+        <div className={`task ${((filter === 'active' && done) || (filter === 'done' && !done)) && 'task_hidden'}`}>
             <div className="task__check">
                 <input type="checkbox" className={done && 'hidden'} onClick={checkHandler}/>
             </div>
