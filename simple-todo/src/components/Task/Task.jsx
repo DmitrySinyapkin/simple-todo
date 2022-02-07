@@ -10,8 +10,8 @@ const Task = ({text, done, checkHandler, changeHandler, deleteHandler}) => {
             </div>
             <div className={`task__text ${done && 'done'}`}>{text}</div>
             <div className="task__btns">
-                <CrossButton icon="&#9998;" onClick={changeHandler} />
-                <CrossButton icon="X" onClick={deleteHandler} />
+                <CrossButton hidden={done} icon="&#9998;" handler={changeHandler} />
+                <CrossButton icon="X" handler={deleteHandler} />
             </div>
         </div>
     );
