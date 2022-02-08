@@ -72,6 +72,7 @@ function App() {
         />
       </header>
       <main>
+        <div className='main_sticky' />
         <TaskList
           tasks={tasks}
           filter={filter}

@@ -3,3 +3,4 @@ node_modules
 simple-todo/.firebaserc
 simple-todo/firebase.json
 .gitignore
+simple-todo/.firebase/hosting.YnVpbGQ.cache
